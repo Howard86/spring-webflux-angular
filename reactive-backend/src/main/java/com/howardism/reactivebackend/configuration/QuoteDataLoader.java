@@ -44,7 +44,7 @@ public class QuoteDataLoader implements ApplicationRunner {
             @Override
             public String get() {
                 // add zero padding
-                return String.format("%0gd", l++);
+                return String.format("%05d", l++);
             }
         };
     }
