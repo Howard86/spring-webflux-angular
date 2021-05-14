@@ -14,7 +14,7 @@ public class QuoteBlockingController {
 
     private static final int DELAY_PER_ITEM_MS = 100;
 
-    private final QuoteMongoBlockingRepository quoteMongoBlockingRepository;
+    private QuoteMongoBlockingRepository quoteMongoBlockingRepository;
 
     @GetMapping("/quotes-blocking")
     public Iterable<Quote> getQuotesBlocking() throws InterruptedException {
