@@ -19,7 +19,7 @@ public class QuoteDataLoader implements ApplicationRunner {
 
     private static final Logger log = LoggerFactory.getLogger((QuoteDataLoader.class));
 
-    private final QuoteMongoReactiveRepository quoteMongoReactiveRepository;
+    private QuoteMongoReactiveRepository quoteMongoReactiveRepository;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
